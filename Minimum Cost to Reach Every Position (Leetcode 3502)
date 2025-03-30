@@ -1,0 +1,11 @@
+class Solution {
+    public int[] minCosts(int[] cost) {
+        int n = cost.length;
+        int mini = cost[0];
+        for(int i = 0; i < n; i++) {
+            mini = Math.min(mini , cost[i]);
+            cost[i] = mini;
+        }
+        return cost;
+    }
+}
